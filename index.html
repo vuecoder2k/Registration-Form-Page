@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form Page</title>
+	<style>
+		.container {
+			margin: 0 auto;
+			background-color: #f3f2f9;
+			width: 25%;
+			height: auto;
+			text-align: center;
+			border-radius: 20px;
+		}
+
+		legend {
+			padding-top: 20px;
+			padding-bottom: 15px;
+			font-size: 25px;
+			text-shadow: 1px 1px;
+		}
+
+		.input-container {
+			padding-left: 10%;
+			width: 70%;
+			height: 65%;
+			text-align: left;
+		}
+		.input-field {
+			font-size: 16px;
+			padding: 10px;
+			width: 100%;
+			height: 20px;
+			box-sizing: content-box;
+			border-radius: 8px;
+		}
+		.input-field,input {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		.gender-container {
+			text-align: left;
+			padding-left: 10%;
+		}
+		#submit-button {
+			background-color: #07ddf9;
+			font-size: 16px;
+			color: white;
+			text-shadow: 1px 1px;
+			width: 50%;
+			height: 45px;
+			margin-top: 10px;
+			border: none;
+			margin-bottom: 8px;
+			border-radius: 20px;
+		}
+		.policy-container {
+			text-align: left;
+			padding-left: 10%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<legend>Sign Up</legend>
+			
+			<div class="input-container">
+				<label for="username">Username</label>
+				<br>
+				<input type="text" name="username" id="username" placeholder="username" required class="input-field">
+
+				<label for="email">Email</label>
+				<br>
+				<input type="email" name="email" id="email" placeholder="example@gmail.com" required class="input-field">
+
+				<label for="password">Password</label>
+				<br>
+				<input type="password" name="password" id="password" placeholder="password" required class="input-field" autocomplete="off">
+
+				<label for="confirm-pass">Confirm password</label>
+				<br>
+				<input type="password" name="confirm-pass" id="confirm-pass" placeholder="confirm password" required class="input-field">
+			</div>
+
+			<div class="gender-container">
+				<input type="radio" name="gender" id="male">
+				<label for="gender">Male</label>
+
+				<input type="radio" name="gender" id="female">
+				<label for="gender">Female</label>
+			</div>
+			
+			<input type="submit" value="Register" id="submit-button">
+			<div class="policy-container">
+				<input type="checkbox" name="policy" id="policy">
+				<label for="policy"><a href="#">Agree to the policy</a></label>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
